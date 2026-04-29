@@ -53,7 +53,18 @@
         padding-block: var(--size-7);
 
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(18rem, 1fr));
         gap: var(--size-5);
+        width: 100%;
+        max-width: calc(2 * 1fr + var(--size-2));
+        margin-inline: auto;
+        box-sizing: border-box;
     }
+
+    @media (max-width: 745px) {
+    .projects {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
     </style>
