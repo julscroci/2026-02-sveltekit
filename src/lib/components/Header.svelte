@@ -15,14 +15,23 @@
 
 <style>
     header{
-        padding-block: var(--size-0);
-        display: flex; gap: var(--size-8); 
-        justify-content: space-between; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+        /* safe-area aware responsive top padding */
+        padding-top: calc(env(safe-area-inset-top, 0px) + clamp(var(--size-2), 3vw, var(--size-6)));
+        padding-bottom: var(--size-2);
+
+        display: flex;
+        gap: var(--size-8);
+        justify-content: space-between;
         align-items: center;
     }
     nav {
-        display: flex; 
-        gap: var(--size-6); 
+        display: flex; gap: var(--size-6); 
         align-items: center;
     }
 </style>
