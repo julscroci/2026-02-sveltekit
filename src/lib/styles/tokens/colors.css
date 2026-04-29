@@ -22,20 +22,6 @@
     --hex-neutral-900: #030404;
 
 /* Named Colors */
-    @media screen and (prefers-color-scheme: light) {
-        --color-canvas: var(--hex-neutral-50);
-        --color-surface: var(--hex-neutral-100);
-
-        --color-ink: var(--hex-neutral-900) ;
-        --color-ink-secondary: var(--hex-neutral-500);
-        --color-ink-inverted: var(--hex-neutral-50);
-
-        --color-link: var(--hex-brand-600);
-   
-        --color-filter--hover: var(--hex-neutral-100);
-        --color-filter--selected: var(--hex-neutral-500);
-    }
-
     @media screen and (prefers-color-scheme: dark) {
         --color-canvas: var(--hex-neutral-900);
         --color-surface: var(--hex-neutral-800);
@@ -48,5 +34,19 @@
 
         --color-filter--hover: var(--hex-neutral-800);
         --color-filter--selected: var(--hex-brand-600);
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+        --color-canvas: var(--hex-neutral-50);
+        --color-surface: var(--hex-neutral-100);
+
+        --color-ink: var(--hex-neutral-900) ;
+        --color-ink-secondary: var(--hex-neutral-500);
+        --color-ink-inverted: var(--hex-neutral-50);
+
+        --color-link: var(--hex-brand-600);
+   
+        --color-filter--hover: var(--hex-neutral-100);
+        --color-filter--selected: var(--hex-neutral-500);
     }
 }

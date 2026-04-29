@@ -3,7 +3,7 @@
 </script>
 
 <header class="safe-area">
-    <Link title="W-D" ref="/" />
+    <Link title="t(r)opic" ref="/" />
 
     <nav>
         <Link title="About" ref="/about" />
