@@ -29,6 +29,9 @@
         gap: var(--size-8);
         justify-content: space-between;
         align-items: center;
+
+        background: linear-gradient(180deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+
     }
     nav {
         display: flex; gap: var(--size-6); 
