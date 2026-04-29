@@ -5,8 +5,8 @@
     const { data } = $props();
 
     let currentYear = $state(data.years [0].number) ;
-    let projects = $derived.by (() => {
-        return data.years.find ((year) = {
+    let projects = $derived.by(() => {
+        return data.years.find((year) => {
             return year.number == currentYear;
         }).projects;
     });
@@ -51,7 +51,7 @@
 
     .projects {
         padding-block: var(--size-7);
-        
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--size-5);
